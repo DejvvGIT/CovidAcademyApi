@@ -1,4 +1,4 @@
-package pl.sdaacademy.covidacademyapi.states_stats;
+package pl.sdaacademy.covidacademyapi.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,8 +7,8 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class AppComponentProvider {
 
-        @Bean
-        public RestTemplate restTemplate() {
-            return new RestTemplate();
-        }
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 }

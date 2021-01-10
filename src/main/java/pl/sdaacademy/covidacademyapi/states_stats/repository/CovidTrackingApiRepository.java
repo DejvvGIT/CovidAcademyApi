@@ -1,13 +1,11 @@
 package pl.sdaacademy.covidacademyapi.states_stats.repository;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
-import pl.sdaacademy.covidacademyapi.states_stats.CovidTrackingApi;
 
-@Component
+@Repository
 public class CovidTrackingApiRepository implements CovidTrackingApi {
-
 
     private final RestTemplate restTemplate;
     private final String allStatesUrl;
